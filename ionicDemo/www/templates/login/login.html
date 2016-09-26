@@ -1,0 +1,45 @@
+<ion-nav-bar class="bar-light" >
+  <ion-nav-back-button >
+  </ion-nav-back-button>
+</ion-nav-bar>
+
+<ion-view  name="login-view"  >
+  <ion-content scroll="true" class="center login-bg-img">
+    {{mes}}
+    <form>
+      <div class="list card ms-login-card" >
+
+        <div class="item item-body ms-item-body"  >
+          <img class="full-image" src="img/bars43.svg">
+        </div>
+        <label class="item item-input ms-item-input-label">
+          <span class="input-label ms-input-label" >
+             <i class="icon ion-ios-person-outline light ms-input-left-icon"></i></span>
+          <input type="text" ng-focus="focusClic()" class="input ms-input-text-color ms-input-focus ms-input-placeholder" placeholder="请输入手机号">
+        </label>
+        <label class="item item-input ms-item-input-label">
+          <span class="input-label ms-input-label">
+             <i class="icon ion-ios-locked-outline light ms-input-left-icon" ></i></span>
+          <input type="password" ng-focus="focusClic()" class="input ms-input-text-color ms-input-focus ms-input-placeholder"  placeholder="请输入密码">
+        </label>
+        <button class="button button-block swiper-button-white" ng-click="loginClick()" style="margin-top:20px;">
+          <span style="color: #34A2Ae;font-size: 22px;font-weight: bold;margin-left: 20px"> 登录</span>
+        </button>
+        <div style="display:flex;justify-content: center">
+          <button class="button button-clear " ng-click="registerClick()">
+            <span class="ms-button-span-txt" > 立即注册</span>
+          </button>
+          <button class="button button-clear " >
+            <span class="ms-button-span-txt"> |</span>
+          </button>
+          <button class="button button-clear button-light" ng-click="forgotClick()">
+            <span class="ms-button-span-txt"> 忘记密码？</span>
+          </button>
+        </div>
+      </div>
+    </form>
+
+
+
+  </ion-content>
+</ion-view>
