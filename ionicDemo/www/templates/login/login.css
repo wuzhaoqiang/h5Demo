@@ -1,7 +1,7 @@
 .login-bg-img {
   width: 100% !important;
   height: 100% !important;
-  background-size : cover;
+  background-size : cover !important;
 /*  background-size: 100% 100% !important;*/
 /*  background-size:contain;*/
  /* background-attachment: fixed !important;*/

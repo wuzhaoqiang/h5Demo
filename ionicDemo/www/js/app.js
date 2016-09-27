@@ -100,7 +100,23 @@ angular.module('starter', ['ionic','ngCordova','starter.config','starter.control
         controller: 'AccountCtrl'
       }
     }
+  })
+
+    // .state('tab.about-us', {
+    //   url: '/account/about-us',
+    //   views:{
+    //     'tab-account':{
+    //       templateUrl: 'templates/account/tab-about-us.html',
+    //       controller: 'AboutUsCtrl'
+    //     }
+    //   }
+    // })
+    .state('about-us', {
+    url: '/about-us',
+        templateUrl: 'templates/account/tab-about-us.html',
+        controller: 'AboutUsCtrl'
   });
+
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');

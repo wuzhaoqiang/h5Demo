@@ -1,0 +1,45 @@
+
+.about-div {
+  height: 40% !important;
+  text-align: center !important;
+  min-height: 160px !important;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.about-img {
+  width: 40%;
+  height: 40%;
+}
+
+.about-item-note{
+  float: right;
+  color: #808080;
+  font-size: 14px;
+}
+
+.about-us-app-version {
+  text-align: center !important;
+  font-size:10px !important;
+  color:#3eaaac !important;
+
+}
+
+.about-us-app-version {
+  text-align: center !important;
+  font-size:10px;color:#3eaaac !important;
+}
+
+.about-us-bottom-des {
+  text-align: center !important;
+  font-size:10px !important;
+}
+
+.about-us-div-bottom{
+  width: 100%;
+  position:relative !important;
+  bottom:0px !important;
+  padding:0px !important;
+  margin-top: 10px !important;
+  min-height:50px !important;
+}
