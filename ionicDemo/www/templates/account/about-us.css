@@ -43,3 +43,9 @@
   margin-top: 10px !important;
   min-height:50px !important;
 }
+
+.about-us-ion-footer-bar{
+  background-color: transparent !important;
+  background-image: none !important;
+  height: 90px !important;
+}

@@ -1,11 +1,7 @@
 <!-- Created by wuzq on 2016/9/26 0026-->
 
-  <ion-view view-title="关于我们">
-    <ion-nav-bar class="bar-light" >
-      <ion-nav-back-button >www
-      </ion-nav-back-button>
-    </ion-nav-bar>
-    <ion-content style="background-color: #F4F4F4;" >
+  <ion-view view-title="关于我们" style="background-color: #F4F4F4;" class="tabs-item-hide">
+    <ion-content style="bottom: 44px">
       <div class="about-div">
         <img src="img/aboutUsIco.svg" class="about-img">
         <br>
@@ -25,19 +21,20 @@
     </span>
         </a>
       </div>
-
     </ion-content>
-      <div style="position:fixed;bottom: 10px;width:100%;">
-        <p class="about-us-app-version">
-          数据服务软件许可及服务协议
-        </p>
-        <div class="about-us-bottom-des">
-          软控股份有限公司 版权所有
-        </div>
-        <div class="about-us-bottom-des" style="margin-top:5px">
-          Copyright © 2016 MESNAC.All Rights Reserved.
-        </div>
+  <ion-footer-bar class="about-us-ion-footer-bar">
+    <div style="position:fixed;bottom: 10px;width:100%;">
+      <p class="about-us-app-version">
+        数据服务软件许可及服务协议
+      </p>
+      <div class="about-us-bottom-des">
+        软控股份有限公司 版权所有
       </div>
+      <div class="about-us-bottom-des" style="margin-top:5px">
+        Copyright © 2016 MESNAC.All Rights Reserved.
+      </div>
+    </div>
+  </ion-footer-bar>
   </ion-view>
 
 

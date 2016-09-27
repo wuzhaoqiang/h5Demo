@@ -102,20 +102,29 @@ angular.module('starter', ['ionic','ngCordova','starter.config','starter.control
     }
   })
 
-    // .state('tab.about-us', {
-    //   url: '/account/about-us',
-    //   views:{
-    //     'tab-account':{
-    //       templateUrl: 'templates/account/tab-about-us.html',
-    //       controller: 'AboutUsCtrl'
-    //     }
-    //   }
-    // })
-    .state('about-us', {
-    url: '/about-us',
-        templateUrl: 'templates/account/tab-about-us.html',
-        controller: 'AboutUsCtrl'
-  });
+    .state('tab.about-us', {
+      url: '/account/about-us',
+      views:{
+        'tab-account':{
+          templateUrl: 'templates/account/tab-about-us.html',
+          controller: 'AboutUsCtrl'
+        }
+      }
+    })
+    .state('tab.feedback',{
+      url: '/account/feedback',
+      views:{
+        'tab-account':{
+          templateUrl: 'templates/account/account-feedback.html',
+          controller: 'FeedbackCtrl'
+        }
+      }
+    });
+  //   .state('about-us', {
+  //   url: '/about-us',
+  //       templateUrl: 'templates/account/tab-about-us.html',
+  //       controller: 'AboutUsCtrl'
+  // });
 
 
   // if none of the above states are matched, use this as the fallback

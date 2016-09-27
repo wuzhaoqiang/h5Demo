@@ -8621,7 +8621,7 @@ progress {
     float: right;
     padding-right: 0;
     padding-left: .2em; }
-  .button.button-block, .button.button-full {
+  .button.button-block,.button.button-common-block, .button.button-full {
     margin-top: 10px;
     margin-bottom: 10px; }
   .button.button-light {
@@ -8651,6 +8651,38 @@ progress {
         background-color: #ddd;
         box-shadow: none;
         color: #fff; }
+      /*button stuly set by myself ,button -> get common code | start */
+      .button.button-common {
+        border-color: #4dB1B2;
+        background-color: #4dB1B2;
+        color: #444;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%}
+      .button.button-common:hover {
+        color: #444;
+        text-decoration: none; }
+      .button.button-common.active, .button.button-common.activated {
+        border-color: #009396;
+        /*background-color: #fafafa; */
+        background-color:#009396;  }
+      .button.button-common.button-clear {
+        border-color: transparent;
+        background: none;
+        box-shadow: none;
+        color: #ddd; }
+      .button.button-common.button-icon {
+        border-color: transparent;
+        background: none; }
+      .button.button-common.button-outline {
+        border-color: #ddd;
+        background: transparent;
+        color: #ddd; }
+      .button.button-common.button-outline.active, .button.button-common.button-outline.activated {
+        background-color: #ddd;
+        box-shadow: none;
+        color: #fff; }
+      /*button stuly set by myself ,button -> get common code | end */
       /*button stuly set by myself ,button -> get validate code | start */
       .button.button-validate-code {
         border-color: #4dB1B2;
@@ -8961,7 +8993,16 @@ progress {
 
 .padding > .button.button-block:first-child {
   margin-top: 0; }
-
+.padding > .button.button-common-block:first-child{
+  margin-top:0;
+}
+.button-common-block{
+  display: block;
+  clear: both;
+}
+.button-common-block.after{
+  clear: both;
+}
 .button-block {
   display: block;
   clear: both; }
@@ -8976,11 +9017,11 @@ progress {
   border-right-width: 0;
   border-left-width: 0;
   border-radius: 0; }
-
+button.button-common-block,
 button.button-block,
 button.button-full,
 .button-full > button.button,
-input.button.button-block {
+input.button.button-block,input.button.button-common-block {
   width: 100%; }
 
 a.button {
